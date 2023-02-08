@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-02-07T17:57:24 IST" name="Default suite" finished-at="2023-02-07T17:57:48 IST" duration-ms="24460">
+    <groups>
+    </groups>
+    <test started-at="2023-02-07T17:57:24 IST" name="Default test" finished-at="2023-02-07T17:57:48 IST" duration-ms="24460">
+      <class name="com.SeleniumPractise.test.AddNewCustomerTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.SeleniumPractise.test.AddNewCustomerTest@5e600dd5]" started-at="2023-02-07T17:57:24 IST" name="setup" finished-at="2023-02-07T17:57:26 IST" duration-ms="1677" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="AddCustomerTest()[pri:0, instance:com.SeleniumPractise.test.AddNewCustomerTest@5e600dd5]" started-at="2023-02-07T17:57:26 IST" name="AddCustomerTest" finished-at="2023-02-07T17:57:32 IST" duration-ms="6494" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddCustomerTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.SeleniumPractise.test.AddNewCustomerTest@5e600dd5]" started-at="2023-02-07T17:57:32 IST" name="teardown" finished-at="2023-02-07T17:57:48 IST" duration-ms="16261" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.SeleniumPractise.test.AddNewCustomerTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
