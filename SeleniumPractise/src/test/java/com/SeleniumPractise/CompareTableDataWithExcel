@@ -1,0 +1,56 @@
+import java.io.File;
+import java.io.IOException;
+import java.util.List;
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.ss.usermodel.Sheet;
+import org.apache.poi.ss.usermodel.Workbook;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class CompareTableDataWithExcel {
+
+    public static void main(String[] args) throws IOException {
+
+        // Launch the Chrome browser and open the web page
+        System.setProperty("webdriver.chrome.driver", "path/to/chromedriver");
+        WebDriver driver = new ChromeDriver();
+        driver.get("https://www.example.com");
+
+        // Find the table element on the web page
+        WebElement table = driver.findElement(By.id("table_id"));
+
+        // Read the data from the Excel file
+        File excelFile = new File("path/to/excel_file.xlsx");
+        Workbook workbook = new XSSFWorkbook(excelFile);
+        Sheet sheet = workbook.getSheet("sheet_name");
+        int rowCount = sheet.getPhysicalNumberOfRows();
+
+        // Loop through each row in the Excel sheet
+        for (int i = 1; i < rowCount; i++) {
+            Row row = sheet.getRow(i);
+
+            // Get the expected data from the Excel sheet
+            String expectedCol1 = row.getCell(0).getStringCellValue();
+            String expectedCol2 = row.getCell(1).getStringCellValue();
+
+            // Find the matching row in the web table
+            List<WebElement> rows = table.findElements(By.tagName("tr"));
+            for (WebElement tableRow : rows) {
+                List<WebElement> cells = tableRow.findElements(By.tagName("td"));
+                if (cells.size() > 1 && cells.get(0).getText().equals(expectedCol1)
+                        && cells.get(1).getText().equals(expectedCol2)) {
+                    // Data match found, exit inner loop
+                    break;
+                }
+            }
+        }
+
+        // Close the browser and the Excel workbook
+        driver.quit();
+        workbook.close();
+    }
+}
