@@ -1,0 +1,254 @@
+
+http://in-mum-trnsapp1:270/
+
+//input[@formcontrolname='corpId']
+
+//input[@formcontrolname='password'] - 
+  
+
+//input[@id='btnLogin']
+
+//label[contains(text(),'Corp ID')]//following::input[@formcontrolname='corpId']
+
+//input[@formcontrolname='corpId']
+
+
+//button[@class='accordion-button collapsed']
+
+//th[contains(text(),'Pursuit Stage(187)')]
+
+//table[@class='table mb-0 Overview-stage-tbl']//th
+
+//div[@id='ag-21']//*[starts-with(@id,'ag-21')]
+
+//button[contains(text(),' Add Opportunity')]
+
+//input[@name='Coastid']//following::img
+
+	public AddNewOppurtunity(WebDriver driver)
+	{
+		this.driver = driver;
+	}
+	
+	
+	//input[@name='searchTerm']
+	
+	27458
+	
+	//div[contains(text(),'27458')]
+	
+	//select[@formcontrolname='Buid']
+	//select[@formcontrolname='Pursuittypeid']
+	
+	
+	//label[contains(text(),'Authentication did not succeed. Check user name and password.')]
+	
+	driver.findElement(By.xpath("//select[@formcontrolname='SBUId']"))
+	
+	Postgres super user password : umesh357
+	
+	
+	//label[contains(text(),'*Lead Solution Architect')]//following::input[@formcontrolname='Solutionarchitect']
+	Abhijit Sawant
+	
+	//label[contains(text(),'*Lead Solution Architect')]//following::input[@role= 'combobox']
+	
+	//label[contains(text(),'*Lead Solution Architect')]//following::ng-autocomplete[@historyidentifier='LDAPUserData']
+	
+	//label[contains(text(),'*Lead Solution Architect')]//following::input[@type='text'][1]
+	//label[contains(text(),'Automation SME')]//following::input[@type='text'][1]
+	
+	//label[contains(text(),'Other Automation Architect')]//following::div[@class='multiselect-dropdown']
+	//input[@aria-label='Abhishek Borkar']
+	
+	
+	
+	Observations
+	---------------
+	Glide path value is not matching with graph and progress report
+	Office Energy usage per floor area and travel emissions graph is not matching
+	
+	Region - Asia pacific data is not matching in facility and travel
+	
+	Country and group data is matching
+	
+	
+
+//wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//label[contains(text(),'*Lead Solution Architect')]//following::input[@type='text'][1]")));
+		//driver.findElement(By.xpath("//label[contains(text(),'*Lead Solution Architect')]//following::input[@formcontrolname='Solutionarchitect']")).clear();
+		//driver.findElement(By.xpath("//label[contains(text(),'*Lead Solution Architect')]//following::input[@type='text'][1]")).sendKeys("Abhijit Sawant");
+		driver.findElement(By.xpath("//label[contains(text(),'Other Automation Architect')]//following::div[@class='multiselect-dropdown']")).click();
+		//driver.findElement(By.xpath("//input[@aria-label='Abhishek Borkar']")).click();
+		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[contains(text(),'Abhishek Borkar')]"))).click();	
+		
+		
+//button[contains(text(),'Close')]
+//button[contains(text(),'Save')]	
+//button[contains(text(),'Submit')]	
+	
+OfferSelectionPage_XPaths
+-----------------------
+//a[contains(text(),'Offer Selection')]
+
+*//following-sibling::label[text()='BIS']
+
+//label[text()='BIS']//../
+
+//label[text()='BIS']//preceding::input[@id='inlineCheckbox2']
+
+//label[text()='EAF']//preceding::input[@id='inlineCheckbox1']
+
+//label[text()='BIS Assessment ']//preceding::input[@value='option5']
+
+//label[contains(text(),' BCC Dashboard')]//preceding::input[@value='option6'] - this label is not proper, need to discuss with shweta and vandana
+
+//label[text()='BIS Automation Enablers']//preceding-sibling::input[@value='option5']
+
+//label[text()='BCC Process Mining']//preceding-sibling::input[@id='chckBCCProcMining']
+
+//label[contains(text(),'BIS AI-ML ')]//preceding-sibling::input[@id='chckBISAiMl']
+
+//input[@id='chckBISSustainability']
+
+//label[contains(text(),'Lead Sector SME')]//following::input[@type='text'][1]
+
+//label[contains(text(),'Solution Approved By')]//following::input[@type='text'][1]
+
+//label[contains(text(),'Other Sector SME')]//following::div[@class='multiselect-dropdown']
+//div[contains(text(),'Abhishek Borkar')]
+
+//label[contains(text(),'Business Process')]//following::button[@id='dropdownManual']
+//button[@value='Account to Report']
+//button[@value='Asset Management']
+
+//input[@formcontrolname='Bisassessmentcost']
+
+//input[@formcontrolname='Bisassessmentcost']
+
+//input[@formcontrolname='Bccdashboardcost']
+
+//input[@formcontrolname='Bisautomationenablercost']
+
+//input[@formcontrolname='Bccprocessminingcost']
+
+//input[@formcontrolname='Bisaimlcost']
+
+//input[@formcontrolname='Bissustainabilitycost']
+
+//input[@formcontrolname='Supportcostpermonth']
+
+//input[@formcontrolname='Bisbusinessvalue']
+
+//input[@formcontrolname='Overalleffortpd']
+
+//input[@formcontrolname='Noofbisautomationenablersproposed']
+
+//select[@formcontrolname='Bisresponsestatus']
+
+ WIP 
+ On-Hold 
+ Dropped 
+ 
+ 
+ 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
+
+
+
+//label[text()=' BIS Automation Enablers']
+
+
+2 decimals FTE
+
+Observations
+------------------
+1. If user input some value in Year1 FTE and modifies it and go to offer selection and select any option, then initial year1 FTE value is showing
+2. If user clicks on save button after above scenario then error is coming and page is asking to login once.
+3. Last Modified Date - spelling is not correct in General Information tab
+4. Oppurtunity name validation is not shown when we click on save button without any values(not related to current changes)
+
+
+Password - Password1
+General Info tab data - CIAP Master
+EIF tab data - CIAPFORAPPS
+BIS tab data - CIAPFORBUSINESS
+
+Last Modified date spelling is not correct.
+
+AMS_FTE - ENTERPRISEAUTOFRABRIC - NOOFAMSFTE
+
+Year1FTE - CIAP Master - YEAR1FTE
+
+Audit Fields - CIAP MASTER
+
+MT is showing small
+
+Check EAF checkbox and uncheck and then save scenarios
+
+Check AMS FTE scenarios
+
+
+Emergency Work orders - % is missing in name
+Observations:
+--------------
+1. Asset Availability - Manage MO Order Approval Process Exception - No KPI is shown though data is present in corresponding excel
+
+2. Name after slash is only showing in Process detail view
+e.g: Idea generation/Innovation 
+
+
+Enter oppurtunity name and go to offer selection page and come back then opportunity name entered by user is not showing.
+
+CR:13834 - need to test
+
+During new opportunity - enter all fields except pursuit type and save, then validation will be thrown to enter pursuit type
+then enter pursuit type from dropdown then Deal status value is not displayed
+
+and if pursuit type is not selected then deal status values are not getting displayed in dropdown.
+
+observations
+-----------------
+1.sorting is not working for Client Name(Ascending order)
+2. CreatedDate filter - not able to filter records with month name search
+
+
+1. Enter opportunity name and go to offer selection page and come back to general information tab then the opportunity name entered by user is not showing.
+
+
+rajparma
+
+Steps to replicate the Scenario:
+-----------------------------------
+1. Add opportunity details in general information tab.
+2. Go to Offer Selection tab and select any EAF Option and save the form.
+3. AMS_FTE will be shown same as Year1_FTE Value
+4. Uncheck the EAF option and save the form and close the form.
+5. Open the same deal entered before and go to offer selction tab and select any EAF option
+6. After Step-5, AMS_FTE value is displaying as zero.
+
+Users
+-----------
+KRNAIR
+spardesi
+shamravi
+
+
+
+
+13842 issue
+---------------------
+
+1. on 125 % resolution, Information icons are overlapped on the Process names.
+Observations
+
+2. If we download propotype detail pdf, the name underscore is shown before KPI header name.
+
+1. If any open defect there means - No Approval for UAT
+2. If no defects found and some suggestions/Observations - we can approve for UAT
+3. Based on severity of observation then we can take this issue changes in next issue or in current issue.
+
+
+Umeshnlr@357
+
+prasa
+
+HBXPS9198N
